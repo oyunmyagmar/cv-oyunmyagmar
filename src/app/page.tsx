@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Btn } from "./_components";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io5";
@@ -6,7 +5,7 @@ import { HiMail } from "react-icons/hi";
 
 export default function HomePage() {
   return (
-    <div className="w-full h-screen flex justify-center py-8 px-11 flex-col gap-4 overflow-y-auto no-scrollbar">
+    <div className="w-full h-screen flex py-8 px-11 flex-col gap-4 overflow-y-auto no-scrollbar">
       <div className="w-full flex justify-between">
         <div>
           <div className="text-xl font-semibold">Ганбаатар Оюунмягмар</div>
