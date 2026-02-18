@@ -2,49 +2,51 @@ import { Btn } from "./_components";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io5";
 import { HiMail } from "react-icons/hi";
+import { cvData } from "@/lib/data";
 
 export default function HomePage() {
   return (
     <div className="w-full h-screen flex py-8 px-11 flex-col gap-4 overflow-y-auto no-scrollbar">
       <div className="w-full flex justify-between">
         <div>
-          <div className="text-xl font-semibold">Ганбаатар Оюунмягмар</div>
+          <div className="text-xl font-semibold">
+            {cvData.lastName} {cvData.firstName}
+          </div>
           <div className="text-base text-muted-foreground">
             Fullstack Developer
           </div>
         </div>
         <div className="flex flex-col text-xs items-end">
           <Btn
-            text="+976 99192615"
+            text={`+976 ${cvData.telPhone}`}
             Icon={BsFillTelephoneFill}
             size={11}
-            href="tel:+97699192615"
+            href={`tel:+976${cvData.telPhone}`}
           />
           <Btn
-            text="oyunmyagmar.g@gmail.com"
+            text={cvData.email}
             Icon={HiMail}
             size={13}
             iconClassName="mt-[1.5px]"
-            href="mailto:oyunmyagmar.g@gmail.com"
+            href={`mailto:${cvData.email}`}
           />
           <Btn
-            text="https://github.com/oyunmyagmar"
+            text={cvData.github}
             Icon={IoLogoGithub}
             size={14}
             iconClassName="mt-[0.5px]"
-            href="https://github.com/oyunmyagmar"
+            href={cvData.github}
           />
         </div>
       </div>
-      <div className="text-xs text-justify">
-        Системийн архитектур төлөвлөлтийг чухалчилж, хэрэглэгчийн үнэ цэнийг
-        эрхэмлэдэг Fullstack хөгжүүлэгч. 14+ төсөл (4 full-stack систем) дээр
-        ажилласан туршлагатай. Баг удирдах болон технологийн судалгаа хийх
-        (Real-time systems, Map GIS) чадвартай. Миний гол зорилго бол
-        технологийн оновчтой шийдлээр дамжуулан бизнесийн бодит асуудлыг
-        шийдвэрлэх бүтээгдэхүүн хөгжүүлэх юм.
+      <div className="text-xs text-justify">{cvData.bioSection}</div>
+      <div className="text-[#0066C8] font-semibold">
+        <div>Ур чадвар</div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
-      <div className="text-[#0066C8] font-semibold">Ур чадвар</div>
       <div className="text-[#0066C8] font-semibold">Туршлага</div>
       <div className="text-[#0066C8] font-semibold">Боловсрол</div>
     </div>

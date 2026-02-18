@@ -1,0 +1,37 @@
+export const cvData = {
+  firstName: "Оюунмягмар",
+  lastName: "Ганбаатар",
+  telPhone: "99192615",
+  email: "oyunmyagmar.g@gmail.com",
+  github: "https://github.com/oyunmyagmar",
+  bioSection:
+    "Системийн архитектур төлөвлөлтийг чухалчилж, хэрэглэгчийн үнэ цэнийг эрхэмлэдэг Fullstack хөгжүүлэгч. 14+ төсөл (4 full-stack систем) дээр ажилласан туршлагатай. Баг удирдах болон технологийн судалгаа хийх (Real-time systems, Map GIS) чадвартай. Миний гол зорилго бол технологийн оновчтой шийдлээр дамжуулан бизнесийн бодит асуудлыг шийдвэрлэх бүтээгдэхүүн хөгжүүлэх юм",
+  skills: {
+    programmingLanguages: ["TypeScript", "JavaScript", "HTML", "CSS"],
+    frontends: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "DaisyUI",
+      "Framer Motion",
+    ],
+    backends: ["GraphQL", "Express.js", "REST APIs", "Node.js"],
+    databases: [
+      "MongoDB",
+      "Cloudflare D1",
+      "Neon PostgreSQL",
+      "Mongoose",
+      "Drizzle",
+      "Prisma",
+    ],
+    dataFetching: ["Axios", "SWR"],
+    mobile: ["React Native", "Flutter"],
+    authentication: ["Clerk", "bcrypt"],
+    libraries: ["Ably", "Nodemailer", "Leaflet"],
+    ai: ["Gemini AI", "Hugging Face"],
+    testing: ["Cypress", "Jest"],
+    deployment: ["Cloudflare", "Vercel", "Render", "Netlify"],
+    projManagement: ["NX Monorepo", "GitHub"],
+  },
+};
