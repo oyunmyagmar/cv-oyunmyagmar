@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { IconType } from "react-icons";
 
-export const Btn = ({
+export const ContactBtn = ({
   text,
   Icon,
   size,

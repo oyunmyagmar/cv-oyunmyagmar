@@ -1,3 +1,7 @@
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { IoLogoGithub } from "react-icons/io5";
+import { HiMail } from "react-icons/hi";
+
 export const cvData = {
   firstName: "Оюунмягмар",
   lastName: "Ганбаатар",
@@ -7,17 +11,17 @@ export const cvData = {
   bioSection:
     "Системийн архитектур төлөвлөлтийг чухалчилж, хэрэглэгчийн үнэ цэнийг эрхэмлэдэг Fullstack хөгжүүлэгч. 14+ төсөл (4 full-stack систем) дээр ажилласан туршлагатай. Баг удирдах болон технологийн судалгаа хийх (Real-time systems, Map GIS) чадвартай. Миний гол зорилго бол технологийн оновчтой шийдлээр дамжуулан бизнесийн бодит асуудлыг шийдвэрлэх бүтээгдэхүүн хөгжүүлэх юм",
   skills: {
-    programmingLanguages: ["TypeScript", "JavaScript", "HTML", "CSS"],
-    frontends: [
+    languages: ["TypeScript", "JavaScript", "HTML", "CSS"],
+    frontendUI: [
       "Next.js",
       "React",
       "Tailwind CSS",
+      "Framer Motion",
       "Shadcn UI",
       "DaisyUI",
-      "Framer Motion",
     ],
-    backends: ["GraphQL", "Express.js", "REST APIs", "Node.js"],
-    databases: [
+    backendRealtime: ["Node.js", "Express.js", "GraphQL", "REST APIs", "Ably"],
+    databasesOrm: [
       "MongoDB",
       "Cloudflare D1",
       "Neon PostgreSQL",
@@ -25,13 +29,49 @@ export const cvData = {
       "Drizzle",
       "Prisma",
     ],
+    devOps: [
+      "Nx Monorepo",
+      "Github",
+      "Cypress",
+      "Jest",
+      "Cloudflare",
+      "Vercel",
+      "Render",
+      "Netlify",
+    ],
     dataFetching: ["Axios", "SWR"],
-    mobile: ["React Native", "Flutter"],
-    authentication: ["Clerk", "bcrypt"],
-    libraries: ["Ably", "Nodemailer", "Leaflet"],
-    ai: ["Gemini AI", "Hugging Face"],
-    testing: ["Cypress", "Jest"],
-    deployment: ["Cloudflare", "Vercel", "Render", "Netlify"],
-    projManagement: ["NX Monorepo", "GitHub"],
+    mobileDev: ["React Native", "Flutter"],
+    aiSpecialTools: [
+      "Gemini AI",
+      "Hugging Face",
+      "Clerk",
+      "Bcrypt",
+      "Leaflet",
+      "Nodemailer",
+    ],
   },
 };
+
+export const contactData = [
+  {
+    text: `+976 ${cvData.telPhone}`,
+    Icon: BsFillTelephoneFill,
+    size: 9,
+    iconClassName: "mb-[1px]",
+    href: `tel:+976${cvData.telPhone}`,
+  },
+  {
+    text: cvData.email,
+    Icon: HiMail,
+    size: 11,
+    iconClassName: "mt-[2px]",
+    href: `mailto:${cvData.email}`,
+  },
+  {
+    text: cvData.github,
+    Icon: IoLogoGithub,
+    size: 12,
+    iconClassName: "mt-[0.5px]",
+    href: cvData.github,
+  },
+];
