@@ -17,29 +17,36 @@ export const cvData = {
       "React",
       "Tailwind CSS",
       "Framer Motion",
+      "SWR",
       "Shadcn UI",
       "DaisyUI",
     ],
-    backendRealtime: ["Node.js", "Express.js", "GraphQL", "REST APIs", "Ably"],
+    backendRealtime: [
+      "Node.js",
+      "Express.js",
+      "GraphQL",
+      "REST APIs",
+      "Axios",
+      "Ably",
+    ],
     databasesOrm: [
+      "Neon PostgreSQL",
       "MongoDB",
       "Cloudflare D1",
-      "Neon PostgreSQL",
-      "Mongoose",
       "Drizzle",
       "Prisma",
+      "Mongoose",
     ],
     devOps: [
       "Nx Monorepo",
       "Github",
       "Cypress",
       "Jest",
-      "Cloudflare",
       "Vercel",
+      "Cloudflare",
       "Render",
       "Netlify",
     ],
-    dataFetching: ["Axios", "SWR"],
     mobileDev: ["React Native", "Flutter"],
     aiSpecialTools: [
       "Gemini AI",
@@ -52,7 +59,7 @@ export const cvData = {
   },
 };
 
-export const contactData = [
+export const contactInfos = [
   {
     text: `+976 ${cvData.telPhone}`,
     Icon: BsFillTelephoneFill,
@@ -74,4 +81,17 @@ export const contactData = [
     iconClassName: "mt-[0.5px]",
     href: cvData.github,
   },
+];
+
+export const leftSideSkills = [
+  cvData.skills.languages,
+  cvData.skills.frontendUI,
+  cvData.skills.backendRealtime,
+  cvData.skills.databasesOrm,
+];
+
+export const rightSideSkills = [
+  cvData.skills.devOps,
+  cvData.skills.mobileDev,
+  cvData.skills.aiSpecialTools,
 ];

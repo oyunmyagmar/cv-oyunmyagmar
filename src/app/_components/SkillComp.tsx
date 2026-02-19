@@ -1,13 +1,10 @@
-import { cvData } from "@/lib/data";
-import React from "react";
-
-export const SkillComp = () => {
+export const SkillComp = ({ skills }: { skills: string[] }) => {
   return (
     <div className="flex gap-1">
       <span>•</span>
-      {cvData.skills.languages.map((lang) => (
-        <p>
-          {lang}
+      {skills.map((el) => (
+        <p key={el}>
+          {el}
           <span>,</span>
         </p>
       ))}

@@ -17,22 +17,7 @@ export default function HomePage() {
         <ContactSection />
       </div>
       <div className="text-xs text-justify">{cvData.bioSection}</div>
-      <div className="w-full flex flex-col gap-2 bg-red-50">
-        <Label className="text-[#2974E4] font-semibold">Ур чадвар</Label>
-        <div className="w-full flex flex-col [@media(min-width:905px)]:flex-row gap-2.5">
-          <div className="flex-1 text-xs bg-amber-50">
-            <SkillSection skills={cvData.skills.languages} />
-            <SkillSection skills={cvData.skills.frontendUI} />
-            <SkillSection skills={cvData.skills.backendRealtime} />
-            <SkillSection skills={cvData.skills.databasesOrm} />
-          </div>
-          <div className="flex-1 text-xs bg-amber-50">
-            <SkillSection skills={cvData.skills.devOps} />
-            <SkillSection skills={cvData.skills.mobileDev} />
-            <SkillSection skills={cvData.skills.aiSpecialTools} />
-          </div>
-        </div>
-      </div>
+      <SkillSection />
 
       <Label className="text-[#2974E4] font-semibold">Туршлага</Label>
       <Label className="text-[#2974E4] font-semibold">Боловсрол</Label>

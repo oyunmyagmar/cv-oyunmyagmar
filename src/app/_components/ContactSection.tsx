@@ -1,11 +1,11 @@
 import { ContactBtn } from "./ContactBtn";
-import { contactData } from "@/lib/data";
+import { contactInfos } from "@/lib/data";
 
 export const ContactSection = () => {
   return (
     <div>
       <div className="flex flex-col text-xs items-end">
-        {contactData.map((el, i) => (
+        {contactInfos.map((el, i) => (
           <ContactBtn
             key={el.href}
             text={el.text}

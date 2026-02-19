@@ -1,16 +1,19 @@
+export type cvDataType = {
+  firstName: string;
+  lastName: string;
+  telPhone: string;
+  email: string;
+  github: string;
+  bioSection: string;
+  skills: SkillsType;
+};
+
 export type SkillsType = {
   languages: string[];
-  frontend: string[];
-  ui: string[];
+  frontendUI: string[];
   backendRealtime: string[];
-  databases: string[];
-  orm: string[];
-  dataFetching: string[];
+  databasesOrm: string[];
+  devOps: string[];
   mobileDev: string[];
-  ai: string[];
-  libs: string[];
-  auth: string[];
-  testing: string[];
-  deployments: string[];
-  arch: string[];
+  aiSpecialTools: string[];
 };
